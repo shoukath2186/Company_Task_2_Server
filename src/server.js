@@ -8,7 +8,7 @@ import UserRouter from "./Router/userRouter.js";
 
 app.use(
     cors({
-      origin: 'http://localhost:5173',
+      origin: process.env.CLINT_URL,
       methods: ['GET', 'POST', 'PUT', 'DELETE'], 
       credentials: true, 
     })
